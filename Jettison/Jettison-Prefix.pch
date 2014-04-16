@@ -13,6 +13,7 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <Parse-iOS-SDK/Parse.h>
 #endif
 
 #import "GRJAppDelegate.h"
