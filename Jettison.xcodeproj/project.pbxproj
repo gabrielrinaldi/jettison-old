@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C09E3DB218FF9E0F00EE9F49 /* GRJUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C09E3DB118FF9E0F00EE9F49 /* GRJUserManager.m */; };
 		C0E0619918FE6804002D1152 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E0619818FE6804002D1152 /* Foundation.framework */; };
 		C0E0619B18FE6804002D1152 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E0619A18FE6804002D1152 /* CoreGraphics.framework */; };
 		C0E0619D18FE6804002D1152 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E0619C18FE6804002D1152 /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* Begin PBXFileReference section */
 		80941874949D434C802F0F28 /* Pods-Jettison.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jettison.xcconfig"; path = "Pods/Pods-Jettison.xcconfig"; sourceTree = "<group>"; };
 		AF3E1B17D9BC44108778F296 /* libPods-Jettison.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jettison.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C09E3DB018FF9E0F00EE9F49 /* GRJUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRJUserManager.h; sourceTree = "<group>"; };
+		C09E3DB118FF9E0F00EE9F49 /* GRJUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRJUserManager.m; sourceTree = "<group>"; };
 		C0E0619518FE6804002D1152 /* Jettison.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jettison.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E0619818FE6804002D1152 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0E0619A18FE6804002D1152 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -83,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C09E3DAF18FF9DF800EE9F49 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C09E3DB018FF9E0F00EE9F49 /* GRJUserManager.h */,
+				C09E3DB118FF9E0F00EE9F49 /* GRJUserManager.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		C0E0618C18FE6804002D1152 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +130,7 @@
 		C0E0619E18FE6804002D1152 /* Jettison */ = {
 			isa = PBXGroup;
 			children = (
+				C09E3DAF18FF9DF800EE9F49 /* Classes */,
 				C0E061A718FE6804002D1152 /* GRJAppDelegate.h */,
 				C0E061A818FE6804002D1152 /* GRJAppDelegate.m */,
 				C0E061AA18FE6804002D1152 /* Images.xcassets */,
@@ -298,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C09E3DB218FF9E0F00EE9F49 /* GRJUserManager.m in Sources */,
 				C0E061A918FE6804002D1152 /* GRJAppDelegate.m in Sources */,
 				C0E061CB18FED670002D1152 /* GRJLoginViewController.m in Sources */,
 				C0E061A518FE6804002D1152 /* main.m in Sources */,

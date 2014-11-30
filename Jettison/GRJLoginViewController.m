@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Gabriel Rinaldi. All rights reserved.
 //
 
+#import "GRJUserManager.h"
 #import "GRJLoginViewController.h"
 
 #pragma mark GRJLoginViewController (Private)
@@ -43,8 +44,16 @@
             }
         } else if ([user isNew]) {
             NSLog(@"User with facebook signed up and logged in!");
+            
+            [GRJUserManager updateCurrentUserWithFacebook:^(NSError *error) {
+                NSLog(@"Error: %@", error);
+            }];
         } else {
             NSLog(@"User with facebook logged in!");
+            
+            [GRJUserManager updateCurrentUserWithFacebook:^(NSError *error) {
+                NSLog(@"Error: %@", error);
+            }];
         }
     }];
 }
@@ -53,28 +62,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    if ([PFUser currentUser] && [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
-        FBRequest *request = [FBRequest requestForMe];
-        [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
-            if (!error) {
-                NSDictionary *userData = (NSDictionary *)result;
-                
-                NSString *facebookID = userData[@"id"];
-                NSString *name = userData[@"name"];
-                NSString *location = userData[@"location"][@"name"];
-                NSString *gender = userData[@"gender"];
-                NSString *birthday = userData[@"birthday"];
-                NSString *relationship = userData[@"relationship_status"];
-                
-                NSURL *pictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", facebookID]];
-                
-                NSLog(@"User with facebook data: %@", userData);
-            } else {
-                NSLog(@"Uh oh. An error occurred: %@", error);
-            }
-        }];
-    }
+    
+    [GRJUserManager updateCurrentUserWithFacebook:^(NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
 }
 
 @end

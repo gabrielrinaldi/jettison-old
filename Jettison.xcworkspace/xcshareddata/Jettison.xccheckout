@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A999E47D-5FA3-4AA6-832F-BCBF27F8D1CC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Jettison</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5E62F329-DD72-4EF5-A285-8F1D5516DB4A</key>
+		<string>ssh://github.com/gabrielrinaldi/Jettison.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Jettison.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5E62F329-DD72-4EF5-A285-8F1D5516DB4A</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/gabrielrinaldi/Jettison.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5E62F329-DD72-4EF5-A285-8F1D5516DB4A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5E62F329-DD72-4EF5-A285-8F1D5516DB4A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Jettison</string>
+		</dict>
+	</array>
+</dict>
+</plist>
